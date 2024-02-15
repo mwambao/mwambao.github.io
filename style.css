@@ -17,9 +17,9 @@ body {
 .menu a {
     background-color:  gray;
     height: 100px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: 1px  darkgreen solid;
-    margin: 10px;
+    margin: 5px;
 
 
 }
