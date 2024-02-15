@@ -9,7 +9,6 @@ body {
 .menu {
     width: auto 0;
     padding: 20px 40px;
-    text-align: center;
 
     
 }
@@ -29,9 +28,11 @@ a:hover{
     background-color: gold;
 }
 
+/*
 #home {
     text-align: center;
 }
+*/
 
 h2 {
     color: gold;
