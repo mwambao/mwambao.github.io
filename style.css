@@ -1,3 +1,18 @@
+/* Troubleshooting
+* {
+    border: 2px solid red;
+}
+
+OR
+
+* {
+    outline: 1px solid red;
+}
+
+*/
+
+
+
 body {
     background-color: black;
     color: white;
@@ -33,6 +48,7 @@ a:hover{
     text-align: center;
 }
 */
+
 
 h2 {
     color: gold;
