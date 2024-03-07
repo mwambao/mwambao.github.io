@@ -28,13 +28,14 @@ body {
     
 }
 
-
+/*using text decoration to remove default underline on the anchor tags*/
 .menu a {
     background-color:  gray;
     height: 100px;
     padding: 10px 10px;
     border: 1px  darkgreen solid;
     margin: 5px;
+    text-decoration: none;
 
 
 }
