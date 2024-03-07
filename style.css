@@ -76,6 +76,8 @@ span {
         padding: 10px 10px;
         
     }
+
+    /* using important word to ensue the style takes precedence*/
     .menu a {
         background-color:  gray;
         height: 10px;
