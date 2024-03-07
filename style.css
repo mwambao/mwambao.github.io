@@ -74,6 +74,7 @@ span {
     .menu {
         width: auto 0;
         padding: 10px 10px;
+        text-decoration: none;
         
     }
     .menu a {
