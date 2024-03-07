@@ -63,6 +63,9 @@ li a {
     color: white;
 }
 
+span {
+    font-weight: bold;
+}
 #contacts li{
     display: inline-block;
 }
