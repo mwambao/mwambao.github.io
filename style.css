@@ -12,11 +12,11 @@ OR
 */
 
 
-
 body {
     background-color: black;
     color: white;
-    font-family: Helvetica;
+    font-family: 'Space Mono', monospace;
+
     
 }
 
