@@ -42,6 +42,7 @@ body {
 
 a:hover{
     background-color: gold;
+    text-decoration: underline;
 }
 
 /*
