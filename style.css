@@ -1,10 +1,11 @@
-/* Troubleshooting
+/* Troubleshooting 
 * {
     border: 2px solid red;
 }
 
 OR
 
+/*
 * {
     outline: 1px solid red;
 }
@@ -22,7 +23,7 @@ body {
 
 
 .menu {
-    width: auto 0;
+    width: auto;
     padding: 20px 40px;
 
     
@@ -34,7 +35,7 @@ body {
     height: 100px;
     padding: 10px 10px;
     border: 1px  darkgreen solid;
-    border-radius: 25% 10%;
+    border-radius: 30px;
     margin: 5px;
     text-decoration: none;
 
@@ -66,8 +67,14 @@ li a {
 }
 
 span {
-    font-weight: bold;
+    font-weight: lighter;
+    color: white;
 }
+
+#skills {
+    display: flex;
+}
+
 #contacts li{
     display: inline-block;
 }
