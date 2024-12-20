@@ -60,7 +60,7 @@ h2 {
 
 h3 {
     color: green;
-    margin: 5px;
+    margin: 20px;
     border: 2px solid white;
     padding: 10px 10px;
 }
@@ -75,7 +75,14 @@ span {
 }
 
 #skills {
+    display: grid;
+}
+
+#projects a {
     display: flex;
+    margin: 10px;
+    border: 2px dashed white;
+    padding: 20px 20px;
 }
 
 #contacts li{
