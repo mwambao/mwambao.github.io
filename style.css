@@ -60,6 +60,9 @@ h2 {
 
 h3 {
     color: green;
+    margin: 5px;
+    border: 2px solid white;
+    padding: 10px 10px;
 }
 
 li a {
