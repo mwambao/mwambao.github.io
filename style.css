@@ -46,11 +46,10 @@ a:hover{
     text-decoration: underline;
 }
 
-/*
+
 #home {
     text-align: center;
 }
-*/
 
 
 h2 {
@@ -85,6 +84,21 @@ span {
     padding: 20px 20px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+}
 #contacts li{
     display: inline-block;
 }
