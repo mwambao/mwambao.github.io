@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Owino</title>
+</head>
+<body>
 
+    <!-- Menu -->
+    <div class="menu">
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contactForm">CONTACTS</a>
+        </nav>
+    </div>
+
+
+
+    <!-- Home -->
+    <div id="home">
+        <h1>Hello there!</h1>
+       <img src="images/duncan.jpg" width="200">
+        <P>I'm Duncan, a Software Engineer who is passionate about creating quality projects and love the challenge of learning new and exciting languages in tech. My interests include coffee, code, music and soccer!</P>
+    </div>
+
+    <!-- Skills -->
+
+        <h2>Skills</h2>
+    
+    <div id="skills">
+
+        <h3>1. Frontend Development: <br><span>HTML, CSS and JavaScript.</span></h3>
+
+        <h3>2. Backend Development: <br><span>Python and Flask.</span></h3>
+
+        <h3>3. Systems Administration: <br><span>Linux Operating systems: Ubuntu, Fedora and Red Hat. I am a Red Hat Certified Engineer(RHCE). Click <a href="https://rhtapps.redhat.com/verify?certId=190-241-372" target="_blank">here</a> for more details.</span></h3>
+
+        <h3>4. Cloud Native: <br><span>Docker, Kubernetes, Helm and microservices in developing scalable applications. I am a <a href="https://www.credly.com/badges/4631e16d-a069-4cf0-badb-87ce75a0214b" target="_blank">Certified Kubernetes Adminstrator(CKA)</a> and <a href="https://www.credly.com/badges/107663b5-ad9f-4bd1-b073-0341301f4026?source=linked_in_profile" target="_blank">Certified Kubernetes Application Developer(CKAD)</a></span></h3>
+
+        <h3>5. Automation: <br><span>Puppet and Ansible.</span></h3>
+        <h3>6. CI/CD: <br><span>Jenkins. I am a <span>Certified Jenkins Engineer(CJE)</span>. Click <a href="https://certificates.cloudbees.com/048f0f77-0271-4e54-b8e0-ba9f58eb34ec#gs.41ia8x" target="_blank">here</a> for more details</span></h3>
+
+
+    </div>
+
+    <!-- Projects -->
+    <div id="projects">
+        <h2>Projects</h2>
+        <ol>
+            <li><a href="https://github.com/mwambao/fashion-blog" target="_blank">Fashion Blog</a></li>
+            <li><a href="https://github.com/mwambao/wine-festival-schedule" target="_blank">Wine Festival Schedule</a></li>
+            <li><a href="https://github.com/mwambao/new-york-city-blog" target="_blank">New York City Blog</a></li>
+            <li><a href="https://github.com/mwambao/healthy-recipes" target="_blank">Healthy Recipes</a></li>
+            <li><a href="https://github.com/mwambao/olivia-woodruff-portfolio" target="_blank">Olivia Woodruff Portfolio</a></li>
+            <li><a href="https://github.com/mwambao/davies-burgers" target="_blank">Davie's Burgers</a></li>
+        </ol>
+
+    </div>
+
+
+    <!-- Contacts -->
+     <div id="contactForm">
+        <h2>Contacts</h2>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea name="message:" id="message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+     </div>
+    <!-- Social -->
+    <div id="Social">
+        <h2>Social Media</h2>
+        <a href="https://twitter.com/mwambad" target="_blank">(X)Twitter</a> |
+        <a href="https://www.linkedin.com/in/duncan-o-mwamba-54692322/" target="_blank">linkedin</a>
+
+    </div>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "UTQ4LM1gixaR-xkAC", // copy your emailjs public key here
+            });
+        })();
+    </script>
+</body>
+</html>
