@@ -1,1 +1,129 @@
 
+/* Troubleshooting 
+* {
+    border: 2px solid red;
+}
+
+OR
+
+/*
+* {
+    outline: 1px solid red;
+}
+
+*/
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+
+    
+}
+
+
+.menu {
+    width: auto;
+    padding: 20px 40px;
+
+    
+}
+
+/*using text decoration to remove default underline on the anchor tags*/
+.menu a {
+    background-color:  gray;
+    height: 100px;
+    padding: 10px 10px;
+    border: 1px  darkgreen solid;
+    border-radius: 30px;
+    margin: 5px;
+    text-decoration: none;
+
+}
+
+a:hover{
+    background-color: gold;
+    text-decoration: underline;
+}
+
+
+#home {
+    text-align: center;
+}
+
+
+h2 {
+    color: gold;
+    font-size: 25px;
+}
+
+h3 {
+    color: green;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 10px 10px;
+    width: auto;
+}
+
+li a {
+    color: white;
+}
+
+span {
+    font-weight: lighter;
+    color: white;
+}
+
+#skills {
+    display: grid;
+}
+
+#projects a {
+    display: flex;
+    margin: 10px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+}
+#contacts li{
+    display: inline-block;
+}
+@media all and (max-width: 600px){
+
+    .menu {
+        width: auto 0;
+        padding: 10px 10px;
+        
+    }
+
+    /* using important word to ensue the style takes precedence*/
+    .menu a {
+        background-color:  gray;
+        height: 10px;
+        padding: 3px 3px;
+        border: 1px  darkgreen solid;
+        border-radius: 25% 10%;
+        margin: 3px;
+        text-decoration: none !important;
+    }
+    
+}
