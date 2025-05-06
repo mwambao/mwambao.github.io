@@ -17,7 +17,7 @@ OR
 body {
     background-color: black;
     color: white;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Space Mono', monospace, Arial, sans-serif;
     text-align: center;
 
     
