@@ -78,14 +78,22 @@ span {
 }
 
 #skills {
-    display: grid;
+    display: flex;
+    flex-flow: column;
 }
+
+#skills h3 {
+    border: 1px solid #676464;
+}
+
+
+
 
 
 #projects a {
     display: grid;
     margin: 10px;
-    border: 2px dotted #d8a994;
+    border: 1px solid #676464;
     padding: 20px 20px;
     border-radius: 12px;
     
