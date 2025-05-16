@@ -59,14 +59,6 @@ h2 {
     font-size: 25px;
 }
 
-h3 {
-    color: green;
-    margin: 20px;
-    border: 2px dashed rgb(255, 255, 255);
-    border-radius: 12px;
-    padding: 10px 10px;
-    width: auto;
-}
 
 li a {
     color: white;
@@ -83,7 +75,12 @@ span {
 }
 
 #skills h3 {
-    border: 1px solid #676464;
+    color: green;
+    margin: 20px;
+    border-radius: 12px;
+    padding: 10px 10px;
+    width: auto;
+    border: 1px solid rgb(112, 112, 109);
 }
 
 
