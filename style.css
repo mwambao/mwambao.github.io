@@ -19,12 +19,24 @@ body {
     color: white;
     font-family: 'Space Mono', monospace, Arial, sans-serif;
     text-align: center;
-
     
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    'menu menu'
+    'home skills'
+    'projects projects'
+    'contactForm conctatForm'
+    'social social';
 }
 
 
 .menu {
+    grid-area: menu ;
     width: auto;
     padding: 20px 40px;
 
@@ -50,6 +62,7 @@ a:hover{
 
 
 .home {
+    grid-area: home;
     text-align: center;
 }
 
@@ -72,7 +85,7 @@ span {
 .skills {
    /* display: flex;
     flex-flow: column; */
-
+    grid-area: skills;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -90,12 +103,17 @@ span {
 
 
 .projects a {
+    grid-area: projects;
     display: grid;
     margin: 10px;
     border: 1px solid #676464;
     padding: 20px 20px;
     border-radius: 12px;
     
+}
+
+.contactForm {
+    grid-area: contactForm;
 }
 
 form {
@@ -116,6 +134,10 @@ button {
 }
 #contacts li{
     display: inline-block;
+}
+
+.social {
+    grid-area: social;
 }
 @media all and (min-width: 320px) and (max-width: 480px){
 
