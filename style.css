@@ -49,7 +49,7 @@ a:hover{
 }
 
 
-#home {
+.home {
     text-align: center;
 }
 
@@ -69,7 +69,7 @@ span {
     color: white;
 }
 
-#skills {
+.skills {
    /* display: flex;
     flex-flow: column; */
 
@@ -79,7 +79,7 @@ span {
     gap: 10px;
 }
 
-#skills h3 {
+.skills h3 {
     color: green;
     margin: 2px;
     border-radius: 12px;
@@ -89,7 +89,7 @@ span {
 }
 
 
-#projects a {
+.projects a {
     display: grid;
     margin: 10px;
     border: 1px solid #676464;
