@@ -1,10 +1,10 @@
 
-
+/* Troubleshooting 
 * {
     border: 2px solid red;
 }
 
-/* Troubleshooting 
+
 OR
 
 /*
@@ -152,8 +152,10 @@ img {
 
 .contactForm {
     grid-area: contactForm;
+    margin: auto 0;
 
 }
+
 
 
 form {
@@ -196,7 +198,7 @@ button {
 }
 @media screen and (width < 600px) {
     body {
-        background-color: grey;
+        /* background-color: grey; */
         font-size: small;
     }
 
