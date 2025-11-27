@@ -1,8 +1,9 @@
-
 /* Troubleshooting 
+
 * {
     border: 2px solid red;
 }
+
 
 OR
 
@@ -13,6 +14,9 @@ OR
 
 */
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: black;
@@ -30,8 +34,9 @@ body {
     'menu menu'
     'home skills'
     'projects projects'
-    'contactForm conctatForm'
+    'contactForm contactForm'
     'social social';
+    gap: 30px;
 }
 
 
@@ -49,7 +54,7 @@ body {
     height: 100px;
     padding: 10px 10px;
     border: 1px  darkgreen solid;
-    border-radius: 30px;
+    border-radius: 10px;
     margin: 5px;
     text-decoration: none;
 
@@ -82,16 +87,46 @@ span {
     color: white;
 }
 
+img {
+    border-radius: 50%;
+}
 .skills {
    /* display: flex;
     flex-flow: column; */
     grid-area: skills;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    'skills-main skills-main skills-main'
+    'FE BE SA'
+    'CN Automation CICD';
+    gap: 20px;
 }
 
+.skills-main {
+    grid-area: skills-main;
+}
+
+.FE {
+    grid-area: FE;
+}
+
+.BE {
+    grid-area: BE;
+}
+
+.CN {
+    grid-area: CN;
+}
+
+.Automation {
+    grid-area: Automation;
+}
+
+.CICD {
+    grid-area: CICD;
+}
 .skills h3 {
     color: green;
     margin: 2px;
@@ -101,29 +136,46 @@ span {
     border: 1px solid #676464;
 }
 
+.projects {
+    grid-area: projects;
+}
 
 .projects a {
-    grid-area: projects;
     display: grid;
-    margin: 10px;
     border: 1px solid #676464;
     padding: 20px 20px;
     border-radius: 12px;
-    
+    width: 95vw;
+    margin-top: 10px;
 }
 
 .contactForm {
     grid-area: contactForm;
+
 }
+
 
 form {
     display: flex;
     flex-direction: column;
     flex-basis: 100px;
     gap: 10px;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
+} 
+
+#name, #email, #message, button{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 30px;
 }
+
+#message {
+    margin-bottom: 20px;
+}
+
 
 button {
     padding: 0px;
@@ -131,6 +183,7 @@ button {
     cursor: pointer;
     width: 100px;
     margin: 0 auto;
+    background-color: brown;
 }
 #contacts li{
     display: inline-block;
