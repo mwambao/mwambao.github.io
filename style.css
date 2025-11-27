@@ -1,10 +1,10 @@
-/* Troubleshooting 
+
 
 * {
     border: 2px solid red;
 }
 
-
+/* Troubleshooting 
 OR
 
 /*
@@ -38,21 +38,20 @@ body {
     'contactForm contactForm'
     'social social';
     gap: 30px;
+    
 }
 
 
 .menu {
     grid-area: menu ;
-    width: auto;
     padding: 20px 40px;
-
+   
     
 }
 
 /*using text decoration to remove default underline on the anchor tags*/
 .menu a {
     background-color:  gray;
-    height: 100px;
     padding: 10px 10px;
     border: 1px  darkgreen solid;
     border-radius: 10px;
@@ -139,6 +138,7 @@ img {
 
 .projects {
     grid-area: projects;
+    width: 100vw;
 }
 
 .projects a {
@@ -192,24 +192,95 @@ button {
 
 .social {
     grid-area: social;
+    width: 100vw;
 }
-@media all and (min-width: 320px) and (max-width: 480px){
-
-    .menu {
-        width: auto 0;
-        padding: 10px 10px;
-        
+@media screen and (width < 600px) {
+    body {
+        background-color: grey;
+        font-size: small;
     }
 
-    /* using important word to ensue the style takes precedence*/
-    .menu a {
-        background-color:  gray;
-        height: 10px;
-        padding: 3px 3px;
-        border: 1px  darkgreen solid;
-        border-radius: 25% 10%;
-        margin: 3px;
-        text-decoration: none !important;
+    .container {
+    display: grid;
+    min-width: 100vw;
+    min-height: 100vh;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'menu'
+    'home'
+    'skills'
+    'projects'
+    'contactForm'
+    'social';
+    gap: 30px;
     }
+
+    .menu-nav {
+    display: grid;
+    width: 100vw;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'menu-home'
+    'menu-skills'
+    'menu-projects'
+    'menu-contactForm';
+    gap: 5px;
+    justify-content: center;
+    }
+
+    .menu-home { 
+        grid-area: menu-home;
+  
+    }
+
+    .menu-skills { 
+        grid-area: menu-skills;
+    }
+
+    .menu-projects {
+        grid-area: menu-projects;}
+
+    .menu-contactForm {
+        grid-area: menu-contactForm;}
+
+    .home {
+        width: 100vw;
+        align-items: start;
+    }
+
+    .skills {
+    width: 100vw;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    'skills-main'
+    'FE'
+    'BE' 
+    'SA'
+    'CN'
+    'Automation' 
+    'CICD';
+    gap: 20px;
+}
     
+.projects a {
+    width: 80vw;
+    margin-top: 10px;
+}
+
+.contactForm {
+    width: 100vw;;
+}
+ 
+#name, #email, #message, button{
+    height: 30px;
+    width: 70vw;
+}
+
+#message {
+    margin-bottom: 20px;
+}
+
 }
