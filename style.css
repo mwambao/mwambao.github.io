@@ -47,8 +47,6 @@ body {
 .menu {
     grid-area: menu ;
     padding: 20px 20px;
-   
-    
 }
 
 /*using text decoration to remove default underline on the anchor tags*/
@@ -197,6 +195,8 @@ button {
     width: 100vw;
     padding-bottom: 20px;
 }
+
+/* media query */
 @media screen and (width < 600px) {
 
     * {
