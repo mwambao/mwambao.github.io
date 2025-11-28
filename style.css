@@ -201,10 +201,10 @@ button {
 
 /* media query */
 @media screen and (width < 600px) {
-
+/* Troubleshooting
     * {
     border: 2px solid red;
-}
+} */
 
     body {
         /* background-color: grey; */
