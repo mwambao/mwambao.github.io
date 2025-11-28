@@ -47,6 +47,7 @@ body {
 .menu {
     grid-area: menu ;
     padding: 20px 20px;
+    position: fixed;
 }
 
 /*using text decoration to remove default underline on the anchor tags*/
